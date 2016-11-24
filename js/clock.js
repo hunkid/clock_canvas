@@ -106,7 +106,7 @@ window.onload = function(){
 		handSec.setPos();
 		handMinu.curPos = countNexPos(handMinu.curPos,360/3600);
 		handMinu.setPos();
-		handHour.curPos = countNexPos(handHour.curPos,360/3600/60);
+		handHour.curPos = countNexPos(handHour.curPos,360/3600/12);
 		handHour.setPos();
 	},1000);
 }
