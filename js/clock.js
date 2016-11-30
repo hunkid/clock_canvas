@@ -7,12 +7,12 @@ var clock = {
 	setClock: function(){
 		ctx.lineWidth = 1;
 		ctx.beginPath();
-		ctx.arc(clock.center[0],clock.center[0],clock.innerRad,0,2*Math.PI,false);
+		ctx.arc(clock.center[0],clock.center[1],clock.innerRad,0,2*Math.PI,false);
 		ctx.stroke();
 		ctx.closePath();
 		ctx.lineWidth = 18;
 		ctx.beginPath();
-		ctx.arc(clock.center[0],clock.center[0],clock.outerRad,0,2*Math.PI,false);
+		ctx.arc(clock.center[0],clock.center[1],clock.outerRad,0,2*Math.PI,false);
 		ctx.stroke();
 		ctx.closePath();
 		ctx.save();
